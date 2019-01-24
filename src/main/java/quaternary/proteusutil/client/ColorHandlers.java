@@ -19,9 +19,9 @@ public class ColorHandlers {
 			
 			int greenLevel = (originalColor >> 8) & 0xFF;
 			
-			greenLevel -= 15;
+			greenLevel -= 10;
 			if(ModConfig.GRASS_VARIANCE) {
-				greenLevel += GRASS_VARIANCE.getValue(pos.getX() / 60d, pos.getZ() / 60d) * 25;
+				greenLevel += GRASS_VARIANCE.getValue(pos.getX() / 30d, pos.getZ() / 30d) * 20;
 			} else {
 				greenLevel += 5;
 			}

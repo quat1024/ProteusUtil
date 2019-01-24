@@ -53,7 +53,7 @@ public class ModConfig {
 			"If true dimensions that aren't the overworld will be forcibly unregistered"
 		);
 		
-		SPAWN_STUFF = config.getBoolean("spawnStuff", "general", true, "Should u spawn off the shore of the island in adventure mode with villagers disabled etc");
+		SPAWN_STUFF = config.getBoolean("spawnStuff", "general", true, "Should u spawn off the shore of the island in adventure mode with villagers disabled etc. Does a lot of things");
 		
 		CANCEL_ENTITYSPAWN = config.getBoolean("cancelEntitySpawn", "general", true, "Should certain entities be prevented from joining the world, specifically items");
 		
@@ -63,7 +63,7 @@ public class ModConfig {
 		
 		DISABLE_HEALTH = config.getBoolean("disableHealth", "general", true, "Disable health mechanic by constantly healing everyone and removing attacking.");
 		
-		SLOWDOWN_FACTOR = config.getFloat("slowdownFactor", "general", 0.83f, 0, 1, "The percentage the player will be slowed down by. 0 = no slowdown, 1 = literally can't move");
+		SLOWDOWN_FACTOR = config.getFloat("slowdownFactor", "general", 0.17f, 0, 1, "The percentage the player will be slowed down by. 0 = no slowdown, 1 = literally can't move");
 		
 		//client stuff////////////////////////////////////////////
 		
@@ -71,7 +71,7 @@ public class ModConfig {
 		DO_FOG_DENSITY = config.getBoolean("doFogDensity", "client", true, "Should the fog density be changed");
 		
 		CANCEL_GUIS = config.getBoolean("cancelGuis", "client", true, "Should certain guis like the inventory screen be cancelled");
-		CANCEL_OVERLAY = config.getBoolean("cancelOverlay", "client", true, "Should most game overlay stuff be cancelled? this will make the game look crappy but useful for debugging");
+		CANCEL_OVERLAY = config.getBoolean("cancelOverlay", "client", true, "Should most game overlay stuff be cancelled? this will make the game look crappy if you turn it off but useful for debugging");
 		CROSSHAIR = config.getBoolean("crosshair", "client", false, "Should the crosshair be drawn");
 		VIGNETTE = config.getBoolean("vignette", "client", true, "Should the vignette effect appear");
 		FIXED_FOV = config.getBoolean("fixedFov", "client", true, "Should the FOV always be set to the fov specified in the settings");
