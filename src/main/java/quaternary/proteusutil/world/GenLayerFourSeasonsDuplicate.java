@@ -1,0 +1,33 @@
+package quaternary.proteusutil.world;
+
+import net.minecraft.world.gen.layer.GenLayer;
+import net.minecraft.world.gen.layer.IntCache;
+
+public class GenLayerFourSeasonsDuplicate extends GenLayer {
+	public GenLayerFourSeasonsDuplicate(long seed, GenLayer parent) {
+		super(seed);
+		this.parent = parent;
+		
+		//////////////////////////////////////////////
+		//////////////////////////////////////////////
+		//////////////////////////////////////////////
+		//////////////////////////////////////////////
+		//////////////////////////////////////////////
+		throw new UnsupportedOperationException("NYI");
+		//////////////////////////////////////////////
+		//////////////////////////////////////////////
+		//////////////////////////////////////////////
+		//////////////////////////////////////////////
+		//////////////////////////////////////////////
+	}
+	
+	GenLayer parent;
+	
+	@Override
+	public int[] getInts(int areaX, int areaY, int areaWidth, int areaHeight) {
+		int[] arr = IntCache.getIntCache(areaWidth * areaHeight);
+		int[] parentArr = parent.getInts(areaX, areaY, areaWidth, areaHeight);
+		
+		return arr;
+	}
+}
