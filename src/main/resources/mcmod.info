@@ -1,0 +1,16 @@
+[
+	{
+		"modid": "proteusutil",
+		"name": "Proteus Util",
+		"description": "Custom mod for the proteus modpack",
+		"version": "${version}",
+		"mcversion": "${mcversion}",
+		"url": "",
+		"updateUrl": "",
+		"authorList": ["quaternary"],
+		"credits": "owo",
+		"logoFile": "",
+		"screenshots": [],
+		"dependencies": []
+	}
+]

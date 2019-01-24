@@ -1,5 +1,8 @@
-Empty repo for now
+ProteusUtil
+===========
 
-Test
+custom mod for the proteus modpack idea
 
-Test 2 local update
+not even closed to finished
+
+go away! nothing to see here! shoo
